@@ -7,6 +7,7 @@ import ImageGalleryItem from '../ImageGalleryItem/ImageGalleryItem'
 import Modal from '../Modal/Modal'
 import Button from '../Button/Button'
 import Loader from 'react-loader-spinner'
+import SolidTitle from '../Titles/SolidTitle'
 import './ImageList.css'
 
 const BASE_URL = 'https://pixabay.com/api/'
@@ -78,10 +79,10 @@ function ImageList({ searchQuery }) {
   if (status === 'idle') {
     return (
       <div className='info-messages'>
-        <p>
-          Hello, I have a lot images for you. Just type your query to search
-          form
-        </p>
+        <SolidTitle
+          titleText='Hello, I have a lot images for you. Just type your query to search
+          form'
+        />
       </div>
     )
   }

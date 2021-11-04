@@ -1,0 +1,18 @@
+.firstTitle {
+  padding: 4rem;
+  filter: url(#distortionFilter);
+  font-size: 36px;
+  color: #0e0e0e;
+  font-variation-settings: 'wght' 700;
+  @media (max-width: 800px) {
+    font-size: 18px;
+  }
+}
+
+.distort {
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -9999px;
+  pointer-events: none;
+}
